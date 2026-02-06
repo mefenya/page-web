@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Rend le site responsive sur mobile -->
+    <title>Page Vitrine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header"> 
+        <h1>Mon Portfolio</h1>
+        <nav class="nav">
+            <!-- Menu de navigation -->
+
+            <a href="apropos.html">À propos</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Contenu principal du site --> 
+
+        <section id="about" class="card">
+            <!-- Section de présentation -->
+
+            <h2>À propos</h2>
+            <p>
+                Je me forme au développement web avec HTML et CSS.
+                Mon objectif est de pouvoir cree des application web.
+            </p>
+        </section>
+
+        <section id="services" class="card">
+            <!-- Section listant les services -->
+
+            <h2>Services</h2>
+
+            <ul>
+                <!-- Liste non ordonnée -->
+                <li>Création de pages web</li>
+                <li>Design responsive</li>
+                <li>Intégration HTML / CSS</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <!-- Section contact -->
+
+            <h2>Contact</h2>
+
+            <!-- Formulaire de contact -->
+            <form class="contact-form">
+                <!-- Form regroupe les champs à envoyer -->
+
+                <label for="name">Nom</label>
+                <!-- label améliore l’accessibilité -->
+                <input type="text" id="name" placeholder="Votre nom" required>
+                <!-- Champ texte obligatoire -->
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Votre email" required>
+                <!-- Champ email avec validation automatique -->
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Votre message" required></textarea>
+                <!-- Zone de texte multiligne -->
+
+                <button type="submit">Envoyer</button>
+                <!-- Bouton d’envoi -->
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <!-- Pied de page -->
+
+        <p>© 2026 - Page vitrine</p>
+    </footer>
+
+</body>
+</html>
